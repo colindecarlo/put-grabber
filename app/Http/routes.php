@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('transfer', 'TransferController', ['only' => 'store']);
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
