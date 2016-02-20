@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::resource('transfer', 'TransferController', ['only' => 'store']);
+Route::resource('settings', 'SettingsController', ['only' => 'index']);
 
 /*
 |--------------------------------------------------------------------------
