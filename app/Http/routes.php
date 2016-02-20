@@ -18,6 +18,9 @@ Route::get('/', function () {
 Route::resource('transfer', 'TransferController', ['only' => 'store']);
 Route::resource('settings', 'SettingsController', ['only' => 'index']);
 
+Route::post('putio/auth', 'PutioController@auth');
+Route::get('putio/accepted', 'PutioController@accepted');
+
 /*
 |--------------------------------------------------------------------------
 | Application Routes
