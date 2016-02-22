@@ -1,0 +1,24 @@
+{
+  "name": "put-grabber",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Colin DeCarlo <colin@thedecarlos.ca>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/colindecarlo/put-grabber",
+  "moduleType": [
+    "globals"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.0"
+  }
+}
