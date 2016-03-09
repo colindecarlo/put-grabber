@@ -40,7 +40,7 @@
 }
 
 nav .list-group {
-  margin-right: -11px;
+  margin-right: -10px;
   margin-left: -10px;
 }
 
@@ -48,6 +48,8 @@ nav .list-group-item {
   background: #605063;
   border-bottom: 1px solid #B2D5BA;
   border-top: 1px solid #B2D5BA;
+  border-right: 0;
+  border-left: 0;
 }
 
 nav .list-group-item:first-child {
