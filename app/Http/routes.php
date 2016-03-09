@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'HomeController@index');
 
 Route::resource('transfer', 'TransferController', ['only' => 'store']);
 Route::resource('settings', 'SettingsController', ['only' => 'index']);
