@@ -7,7 +7,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <link rel="icon" href="{!! asset('img/favicon.ico') !!}">
 
-    <title>Starter Template for Bootstrap</title>
+    <title>PutGrabber</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{!! asset('css/app.css') !!}" rel="stylesheet">
@@ -15,35 +15,31 @@
 
 <body>
 
-<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">PutGrabber</a>
-        </div>
-        <div id="navbar" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav">
-                <li @if(Request::is('/'))class="active"@endif><a href="{!! url('/') !!}">Home</a></li>
-                <li @if(Request::is('settings'))class="active"@endif><a href="{!! url('settings') !!}">Settings</a></li>
-                <li><a href="#contact">Contact</a></li>
+<div class="flex-container">
+    <div class="sidebar-nav">
+        <p class="logo">PutGrabber</p>
+        <section class="avatar">
+            <img class="img-circle" src="https://api.adorable.io/avatars/75/colin%40thedecarlos.ca">
+            <p>colin@thedecarlos.ca</p>
+        </section>
+        <nav>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="{!! url('/downloads') !!}">Available Downloads</a></li>
+                <li class="list-group-item"><a href="{!! url('/shows') !!}">Show Settings</a></li>
+                <li class="list-group-item"><a href="{!! url('/logs') !!}">Logs</a></li>
             </ul>
-        </div><!--/.nav-collapse -->
+        </nav>
+
     </div>
-</nav>
+    <div class="content">
+        <div class="row">
+            <div class="col-md-3 col-md-offset-3">
+                @yield('content')
+            </div>
+        </div>
 
-<div class="container">
-
-    <div class="starter-template">
-        @yield('content')
     </div>
-
-</div><!-- /.container -->
-
+</div>
 
 <!-- Bootstrap core JavaScript
 ================================================== -->
