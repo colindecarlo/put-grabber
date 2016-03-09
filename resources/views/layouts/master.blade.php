@@ -20,7 +20,7 @@
         <p class="logo">PutGrabber</p>
         <section class="avatar">
             <img class="img-circle" src="https://api.adorable.io/avatars/75/colin%40thedecarlos.ca">
-            <p>colin@thedecarlos.ca</p>
+            <p>thedecarlos</p>
         </section>
         <nav>
             <ul class="list-group">
