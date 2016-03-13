@@ -10,6 +10,8 @@
     <title>PutGrabber</title>
 
     <!-- Bootstrap core CSS -->
+    <link href="{!! asset('css/normalize.css') !!}" rel="stylesheet">
+    <link href="{!! asset('css/base.css') !!}" rel="stylesheet">
     <link href="{!! asset('css/app.css') !!}" rel="stylesheet">
 </head>
 
