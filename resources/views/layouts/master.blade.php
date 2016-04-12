@@ -19,7 +19,7 @@
 
 <div class="flex-container">
     <div class="sidebar-nav">
-        <p class="logo">PutGrabber</p>
+        <h1>PutGrabber</h1>
         <section class="avatar">
             <img class="img-circle" src="https://api.adorable.io/avatars/75/colin%40thedecarlos.ca">
             <p>thedecarlos</p>
